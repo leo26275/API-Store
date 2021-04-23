@@ -22,7 +22,7 @@ async function createBrand(body) {
         brand = await models.Marca.create(body);
         return {statusCode: 201, message: "Brand created successfully", response: brand}
     } catch (error) {
-        console.log(error)
+        console.log(error);
         return {statusCode: 400, message: "The brand could not be created"}
     }
 }
@@ -44,7 +44,7 @@ async function updateBrand(brand_id, body) {
         
         return {statusCode: 201, message: "Brand update successfully", response: brand}
     } catch (error) {
-        console.log(error)
+        console.log(error);
         return {statusCode: 400, message: "The brand could not be update"}
     }
 }
@@ -66,7 +66,7 @@ async function updateStatusBrand(brand_id, body) {
         
         return {statusCode: 201, message: "Status Brand update successfully"}
     } catch (error) {
-        console.log(error)
+        console.log(error);
         return {statusCode: 400, message: "The status brand could not be update"}
     }
 }
@@ -88,7 +88,7 @@ async function deleteBrand(brand_id) {
         
         return {statusCode: 201, message: "Brand delete successfully"}
     } catch (error) {
-        console.log(error)
+        console.log(error);
         return {statusCode: 400, message: "The brand could not be delete"}
     }
 }

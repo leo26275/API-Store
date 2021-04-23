@@ -10,7 +10,8 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
 
-app.use('/api/brand', require('./routes/brand_routes'))
+app.use('/api/brand', require('./routes/brand_routes'));
+app.use('/api/category', require('./routes/category_routes'));
 
 async function initDatabase() {
     try {
